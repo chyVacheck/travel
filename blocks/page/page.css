@@ -1,4 +1,13 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(./../../Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
 .page {
+    padding: 28px 48px 24px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0%;
-    background-color: #E5E5E5;
+    background-color: #2A2C2F;
 }
