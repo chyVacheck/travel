@@ -2,15 +2,11 @@
   max-width: 720px;
   max-height: 200px;
 
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
   font-size: 96px;
   line-height: 104%;
   /* or 104% */
 
   text-align: center;
 
-  color: #ffffff;
   margin: 0%;
 }
