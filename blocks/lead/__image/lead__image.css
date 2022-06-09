@@ -1,5 +1,30 @@
-.lead__image{
-    margin: 32px 0 8px 0;
-    max-width: 984px;
-    max-height: 615px;
+.lead__image {
+  margin: 64px 0 8px 0;
+  width: 100%;
+  max-width: 984px;
+  max-height: 615px;
+}
+
+@media screen and (min-width: calc(1024px + 17px)) and (max-width: calc(1280px + 17px)) {
+  .lead__image {
+    margin-top: calc(64px + ((100% - 984px) / ((984 - 928) / (64 - 56))));
+    /* временно */
+    background-color: #cccccc; /* цвет при 1024 - 1280 */
+  }
+}
+
+@media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px)) {
+  .lead__image {
+    margin-top: 56px;
+    /* временно */
+    background-color: #f5a5a5; /* цвет при 768 - 1024 */
+  }
+}
+
+@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px)) {
+  .lead__image {
+    margin-top: calc(56px + ((100% - 768px) / ((768 - 320) / (56 - 40))));
+    /* временно */
+    background-color: #ffe6e6; /* цвет при 320 - 768 */
+  }
 }

@@ -1,9 +1,32 @@
-.lead{
-    margin: 0%;
-    max-width: 984px;
-    max-height: 1005px;
-    padding-bottom: 92px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.lead {
+  margin: 0%;
+  max-width: 984px;
+  max-height: 1005px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: calc(1024px + 17px)) and (max-width: calc(1280px + 17px)) {
+  .lead {
+    width: calc(984px + ((100% - 1184px) / ((1184 - 1024) / (984 - 928))));
+    /* временно */
+    background-color: #cccccc; /* цвет при 1024 - 1280 */
+  }
+}
+
+@media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px)) {
+  .lead {
+    width: calc(928px + ((100% - 1024px) / ((1024 - 768) / (928 - 768))));
+    /* временно */
+    background-color: #f5a5a5; /* цвет при 768 - 1024 */
+  }
+}
+
+@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px)) {
+  .lead {
+    width: 100%;
+    /* временно */
+    background-color: #ffe6e6; /* цвет при 320 - 768 */
+  }
 }
