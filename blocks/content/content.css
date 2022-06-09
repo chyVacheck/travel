@@ -1,32 +1,32 @@
-.header {
-  width: 1184px;
+.content {
+  margin: 28px 0 92px 0;
+  width: 100%;
+  max-width: 1184px;
   display: flex;
-  margin: 28px 0;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 
-    /* временно */
-    background-color: #493737; /* цвет при 1280+ */
+  /* временно */
+  background-color: #493737; /* цвет при 1280+ */
 }
 
 @media screen and (min-width: calc(1024px + 17px)) and (max-width: calc(1280px + 17px)) {
-  .header {
-    width: calc(1184px + ((100% - 1280px) / ((1280 - 1024) / (1184 - 928))));
+  .content {
+    margin-top: calc(28px + ((100% - 1280px) / ((1280 - 1024) / (28 - 20))));
     /* временно */
     background-color: #cccccc; /* цвет при 1024 - 1280 */
   }
 }
 
 @media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px)) {
-  .header {
-    width: calc(928px + ((100% - 1024px) / ((1024 - 768) / (928 - 720))));
+  .content {
     /* временно */
     background-color: #f5a5a5; /* цвет при 768 - 1024 */
   }
 }
 
 @media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px)) {
-  .header {
-    width: calc(720px + ((100% - 768px) / ((768 - 320) / (720 - 288))));
+  .content {
     /* временно */
     background-color: #ffe6e6; /* цвет при 320 - 768 */
   }
