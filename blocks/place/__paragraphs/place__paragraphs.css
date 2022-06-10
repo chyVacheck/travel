@@ -1,27 +1,24 @@
-.place__title {
+.place__paragraphs {
   margin: 0%;
   width: 100%;
-  font-size: 72px;
-  line-height: 106%;
-  /* or 106% */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px 0;
 }
 
 @media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px)) {
-  .place__title {
-
-    font-size: 42px;
-    line-height: 110%;
+  .place__paragraphs {
+    gap: 25px 0;
     /* временно */
     background-color: #f5a5a5; /* цвет при 768 - 1024 */
   }
 }
 
-@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px - 1px)) {
-  .place__title {
-    width: 288px;
-
-    font-size: 32px;
-    line-height: 109%;
+@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px)) {
+  .place__paragraphs {
+    gap: 25px 0;
+    align-items: center;
     /* временно */
     background-color: #ffe6e6; /* цвет при 320 - 768 */
   }

@@ -3,10 +3,25 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 12px;
-  /* identical to box height, or 100% */
+  line-height: 170%;
 
   letter-spacing: 2px;
 
   color: #aaaaaa;
+}
+
+@media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px)) {
+  .place__website__url-heading {
+    line-height: 100%;
+    /* временно */
+    background-color: #f5a5a5; /* цвет при 768 - 1024 */
+  }
+}
+
+@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px)) {
+  .place__website__url-heading {
+    line-height: 100%;
+    /* временно */
+    background-color: #ffe6e6; /* цвет при 320 - 768 */
+  }
 }

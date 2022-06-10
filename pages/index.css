@@ -40,6 +40,7 @@
 @import url(./../blocks/place/__website/place__website.css);
 @import url(./../blocks/place/__website/__url-heading/place__website__url-heading.css);
 @import url(./../blocks/place/__website/__link/place__website__link.css);
+@import url(./../blocks/place/__paragraphs/place__paragraphs.css);
 @import url(./../blocks/place/__paragraph/place__paragraph.css);
 
 /* подключаем все что в cover */

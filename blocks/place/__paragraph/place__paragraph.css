@@ -1,8 +1,26 @@
 .place__paragraph {
-  margin: 0 0 26px 0;
+  margin: 0;
+  width: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 163%;
   /* or 29px */
+}
+
+@media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px)) {
+  .place__paragraph {
+    font-size: 16px;
+    /* временно */
+    background-color: #f5a5a5; /* цвет при 768 - 1024 */
+  }
+}
+
+@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px - 1px)) {
+  .place__paragraph {
+    font-size: 16px;
+    width: 288px;
+    /* временно */
+    background-color: #ffe6e6; /* цвет при 320 - 768 */
+  }
 }

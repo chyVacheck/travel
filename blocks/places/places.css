@@ -1,4 +1,35 @@
-.places{
-    margin: 92px 0 0 0;
-    width: 984px;
+.places {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 984px;
+  gap: 80px 0;
+}
+
+@media screen and (min-width: calc(1024px + 17px)) and (max-width: calc(1280px + 17px)) {
+  .places {
+    width: calc(984px + ((100% - 1184px) / ((1184 - 1024) / (984 - 928))));
+    /* временно */
+    background-color: #cccccc; /* цвет при 1024 - 1280 */
+  }
+}
+
+@media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px)) {
+  .places {
+    width: calc(928px + ((100% - 1024px) / ((1024 - 768) / (928 - 720))));
+    gap: calc(80px + ((100% - 928px) / ((928 - 720) / (80 - 73)))) 0;
+    /* временно */
+    background-color: #f5a5a5; /* цвет при 768 - 1024 */
+  }
+}
+
+@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px - 1px)) {
+  .places {
+    width: calc(340px + ((100% - 768px) / ((768 - 320) / (340 - 320))));
+    gap: 50px 0;
+
+    /* временно */
+    background-color: #ffe6e6; /* цвет при 320 - 768 */
+  }
 }
