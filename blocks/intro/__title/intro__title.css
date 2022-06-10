@@ -1,7 +1,17 @@
 .intro__title {
-  margin: 0 0 40px 0;
+  margin: 0;
   font-size: 54px;
-  line-height: 58px;
+  line-height: 107%;
   /* identical to box height, or 107% */
 
 }
+
+/* 1/2 между 320 и 768 меняем шрифт */
+@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px - 224px + 17px)) {
+  .intro__title {
+    font-size: 32px;
+    line-height: 109%;
+    max-width: 288px;
+  }
+}
+

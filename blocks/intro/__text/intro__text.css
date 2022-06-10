@@ -1,10 +1,16 @@
 .intro__text {
-  margin: 0%;
-  width: 690px;
+  margin: 40px 0 33px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 163%;
   /* or 26px */
+}
 
+@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px)) {
+  .intro__text {
+    margin-bottom: calc(33px + ((100% - 720px) / ((720 - 288) / (33 - 34))));
+    /* временно */
+    background-color: #ffe6e6; /* цвет при 320 - 768 */
+  }
 }

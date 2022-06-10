@@ -21,7 +21,7 @@
   }
 }
 
-/* посредине между 320 и 768 меняем шрифт */
+/* 1/2 между 320 и 768 меняем шрифт */
 @media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px - 224px + 17px)) {
   .lead__subtitle {
     font-size: 16px;
