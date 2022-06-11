@@ -1,7 +1,46 @@
-.photo-grid{
-    margin: 92px 0 0 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 16px;
+.photo-grid {
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+  justify-content: center;
+}
+
+@media screen and (min-width: calc(1024px + 17px)) and (max-width: calc(1280px + 17px - 1px)) {
+  .photo-grid {
+    width: calc(
+      100% - 2 * (0px + ((100% - 1184px) / ((1184 - 1024) / (0 - 48))))
+    );
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* временно */
+    /* цвет при 1024 - 1280 */
+    /* background-color: #2e2323; */
+  }
+}
+
+@media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px - 1px)) {
+  .photo-grid {
+    gap: 14px;
+    width: calc(928px + ((100% - 1024px) / ((1024 - 768) / (928 - 720))));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    /* временно */
+    /* цвет при 768 - 1024 */
+    /* background-color: #cc3535; */
+  }
+}
+
+@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px - 1px)) {
+  .photo-grid {
+    gap: 16px 0;
+    width: calc(720px + ((100% - 768px) / ((768 - 320) / (720 - 288))));
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    /* временно */
+    /* цвет при 320 - 768 */
+    /* background-color: #3b0404; */
+  }
 }
