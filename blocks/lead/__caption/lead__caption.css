@@ -14,7 +14,7 @@
   align-self: flex-start;
 }
 
-@media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px - 1px)) {
+@media screen and (min-width: calc(544px)) and (max-width: calc(896px)) {
   .lead__caption {
     padding-left: calc(0px + ((100% - 928px) / ((928 - 768) / (0 - 24))));
     /* временно */
@@ -23,7 +23,7 @@
   }
 }
 
-@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px - 1px)) {
+@media screen and (min-width: calc(320px)) and (max-width: calc(544px)) {
   .lead__caption {
     padding-left: calc(24px + ((100% - 768px) / ((768 - 320) / (24 - 16))));
     /* временно */

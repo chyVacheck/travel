@@ -9,7 +9,7 @@
   text-align: right;
 }
 
-@media screen and (min-width: calc(320px)) and (max-width: calc(768px - 1px)) {
+@media screen and (min-width: calc(320px)) and (max-width: calc(544px)) {
   .footer__copyright {
     text-align: left;
     line-height: 100%;

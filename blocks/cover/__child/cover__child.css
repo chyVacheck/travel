@@ -37,19 +37,19 @@
   opacity: 0.8;
 }
 
-@media screen and (max-width: calc(1140px + 17px)) {
+@media screen and (max-width: calc(1140px)) {
   .cover__child {
     min-height: 640px;
   }
 }
 
-@media screen and (max-width: calc(984px + 17px)) {
+@media screen and (max-width: calc(984px)) {
   .cover__child {
     min-height: 480px;
   }
 }
 
-@media screen and (max-width: calc(568px + 17px)) {
+@media screen and (max-width: calc(568px)) {
   .cover__child {
     min-height: 200px;
     padding: 10px;

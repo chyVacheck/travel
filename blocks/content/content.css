@@ -11,7 +11,7 @@
   /* background-color: #493737; */
 }
 
-@media screen and (min-width: calc(1024px)) and (max-width: calc(1280px - 1px)) {
+@media screen and (min-width: calc(896px)) and (max-width: calc(1152px)) {
   .content {
     margin-top: calc(28px + ((100% - 1280px) / ((1280 - 1024) / (28 - 20))));
     /* временно */
@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (min-width: calc(768px)) and (max-width: calc(1024px - 1px)) {
+@media screen and (min-width: calc(544px)) and (max-width: calc(896px)) {
   .content {
     margin-top: 20px;
     margin-bottom: calc(92px + ((100% - 1024px) / ((1024 - 768) / (92 - 88))));
@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (min-width: calc(320px)) and (max-width: calc(768px - 1px)) {
+@media screen and (min-width: calc(320px)) and (max-width: calc(544px)) {
   .content {
     margin-top: 20px;
     margin-bottom: calc(88px + ((100% - 768px) / ((768 - 320) / (88 - 64))));

@@ -18,7 +18,7 @@
 
 @media screen and (min-width: calc(768px)) and (max-width: calc(1024px - 1px)) {
   .lead {
-    width: calc(928px + ((100% - 1024px) / ((1024 - 768) / (928 - 768))));
+    width: 100%;
     /* временно */
     /* цвет при 768 - 1024 */
     /* background-color: #f5a5a5; */

@@ -6,7 +6,7 @@
   gap: 48px 40px;
 }
 
-@media screen and (min-width: calc(1024px)) and (max-width: calc(1280px + 17px - 1px)) {
+@media screen and (min-width: calc(896px)) and (max-width: calc(1152px)) {
   .place {
     grid-template-columns:
       calc(460px + ((100% - 984px) / ((984 - 928) / (460 - 440))))
@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (min-width: calc(768px)) and (max-width: calc(1024px + 17px - 1px)) {
+@media screen and (min-width: calc(544px)) and (max-width: calc(896px)) {
   .place {
     grid-template-columns:
       calc(440px + ((100% - 928px) / ((928 - 720) / (440 - 340))))
@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (min-width: calc(320px)) and (max-width: calc(768px + 17px - 1px)) {
+@media screen and (min-width: calc(320px)) and (max-width: calc(544px)) {
   .place {
     width: 100%;
     grid-template-columns: 1fr;
