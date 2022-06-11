@@ -1,9 +1,22 @@
-.footer__links{
-    margin: 0%;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 18px;
-    text-decoration: none;
-    list-style-type: none;
+.footer__links {
+  margin: 0%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  font-size: 16px;
+  line-height: 112%;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px)) {
+  .footer__links {
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 100%;
+    /* временно */
+    /* цвет при 320 - 768 */
+    /* background-color: #ffe6e6; */
+  }
 }

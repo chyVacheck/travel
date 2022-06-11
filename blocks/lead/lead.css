@@ -11,7 +11,8 @@
   .lead {
     width: calc(984px + ((100% - 1184px) / ((1184 - 1024) / (984 - 928))));
     /* временно */
-    background-color: #cccccc; /* цвет при 1024 - 1280 */
+    /* цвет при 1024 - 1280 */
+    /* background-color: #cccccc; */
   }
 }
 
@@ -19,7 +20,8 @@
   .lead {
     width: calc(928px + ((100% - 1024px) / ((1024 - 768) / (928 - 768))));
     /* временно */
-    background-color: #f5a5a5; /* цвет при 768 - 1024 */
+    /* цвет при 768 - 1024 */
+    /* background-color: #f5a5a5; */
   }
 }
 
@@ -27,6 +29,7 @@
   .lead {
     width: 100%;
     /* временно */
-    background-color: #ffe6e6; /* цвет при 320 - 768 */
+    /* цвет при 320 - 768 */
+    /* background-color: #ffe6e6; */
   }
 }
