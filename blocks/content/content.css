@@ -1,43 +1,31 @@
 .content {
-  margin: 28px 0 92px 0;
+  margin: 56px 0 92px 0;
   width: 100%;
   max-width: 1184px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 92px 0;
-  /* временно */
-  /* цвет при 1280+ */
-  /* background-color: #493737; */
 }
 
 @media screen and (min-width: calc(896px)) and (max-width: calc(1152px)) {
   .content {
-    margin-top: calc(28px + ((100% - 1280px) / ((1280 - 1024) / (28 - 20))));
-    /* временно */
-    /* цвет при 1024 - 1280 */
-    /* background-color: #cccccc; */
+    margin-top: 48px;
   }
 }
 
 @media screen and (min-width: calc(544px)) and (max-width: calc(896px)) {
   .content {
-    margin-top: 20px;
-    margin-bottom: calc(92px + ((100% - 1024px) / ((1024 - 768) / (92 - 88))));
-    gap: calc(92px + ((100% - 1024px) / ((1024 - 768) / (92 - 88))));;
-    /* временно */
-    /* цвет при 768 - 1024 */
-    /* background-color: #f5a5a5; */
+    margin-top: 48px;
+    margin-bottom: 88px;
+    gap: 88px;
   }
 }
 
 @media screen and (min-width: calc(320px)) and (max-width: calc(544px)) {
   .content {
-    margin-top: 20px;
-    margin-bottom: calc(88px + ((100% - 768px) / ((768 - 320) / (88 - 64))));
-    gap: calc(88px + ((100% - 768px) / ((768 - 320) / (88 - 64))));
-    /* временно */
-    /* цвет при 320 - 768 */
-    /* background-color: #ffe6e6; */
+    margin-top: 48px;
+    margin-bottom: 64px;
+    gap: 64px;
   }
 }

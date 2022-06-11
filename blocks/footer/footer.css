@@ -1,41 +1,28 @@
 .footer {
-  width: 100%;
+  width: 92.5%;
   max-width: 1184px;
   margin: 0%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  /* временно */
-  /* цвет при 1280+ */
-  /* background-color: #493737; */
 }
 
-@media screen and (min-width: calc(1024px)) and (max-width: calc(1280px - 1px)) {
+@media screen and (min-width: calc(896px)) and (max-width: calc(1152px)) {
   .footer {
-    width: calc(1184px + ((100% - 1280px) / ((1280 - 1024) / (1184 - 928))));
-    /* временно */
-    /* цвет при 1024 - 1280 */
-    /* background-color: #cccccc; */
+    width: 90.625%;
   }
 }
 
-@media screen and (min-width: calc(768px)) and (max-width: calc(1024px - 1px)) {
+@media screen and (min-width: calc(544px)) and (max-width: calc(896px)) {
   .footer {
-    width: calc(928px + ((100% - 1024px) / ((1024 - 768) / (928 - 720))));
-    /* временно */
-    /* цвет при 768 - 1024 */
-    /* background-color: #f5a5a5; */
+    width: 93.75%;
   }
 }
 
-@media screen and (min-width: calc(320px)) and (max-width: calc(768px - 1px)) {
+@media screen and (min-width: calc(320px)) and (max-width: calc(544px)) {
   .footer {
-    width: calc(720px + ((100% - 768px) / ((768 - 320) / (720 - 288))));
+    width: 90%;
     flex-direction: column;
     gap: 48px;
-    /* временно */
-    /* цвет при 320 - 768 */
-    /* background-color: #ffe6e6; */
   }
 }
