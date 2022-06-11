@@ -1,37 +1,57 @@
-.cover__child{
-    margin: 0%;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+.cover__child {
+  margin: 0%;
+  min-height: 740px;
+  width: 100%;
+  text-decoration: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 
-    background-image: url(./../../../images/cover-trains.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  background-image: url(./../../../images/cover-trains.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
-.cover__child::before{
-    content: '';
-    background: #2a2c2f;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity:  0.3;
+.cover__child::before {
+  content: "";
+  background: #2a2c2f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
 
-    transition: 0.6s;
-    z-index: -1;
+  transition: 0.6s;
+  z-index: -1;
 }
 
-.cover__child:hover::before{
-    opacity: 0.8;
+.cover__child:hover::before {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: calc(1140px + 17px)) {
+  .cover__child {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: calc(984px + 17px)) {
+  .cover__child {
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: calc(568px + 17px)) {
+  .cover__child {
+    min-height: 200px;
+    padding: 10px;
+  }
 }

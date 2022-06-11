@@ -13,7 +13,7 @@
 
   margin: 32px 0 0 0;
 }
-@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px)) {
+@media screen and (min-width: calc(320px)) and (max-width: calc(768px - 1px)) {
   .lead__subtitle {
     margin-top: calc(32px + ((100% - 768px) / ((768 - 320) / (32 - 16))));
     /* временно */
@@ -23,7 +23,7 @@
 }
 
 /* 1/2 между 320 и 768 меняем шрифт */
-@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px - 224px + 17px)) {
+@media screen and (min-width: calc(320px)) and (max-width: calc(768px - 224px + 17px)) {
   .lead__subtitle {
     font-size: 16px;
     line-height: 125%;

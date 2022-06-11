@@ -1,9 +1,21 @@
 .cover__title {
-  margin: 0 0 16px;
+  margin: 0;
   width: 560px;
   height: 152px;
   font-size: 72px;
   line-height: 106%;
   /* or 106% */
   text-align: center;
+}
+
+@media screen and (min-width: calc(320px)) and (max-width: calc(768px - 1px)) {
+  .cover__title {
+    max-width: 250px;
+    height: 70px;
+    font-size: 32px;
+    line-height: 109%;
+    /* временно */
+    /* цвет при 320 - 768 */
+    /* background-color: #ffe6e6; */
+  }
 }

@@ -11,6 +11,7 @@
   .place__website {
     width: 288px;
     /* временно */
-    background-color: #ffe6e6; /* цвет при 320 - 768 */
+    /* цвет при 320 - 768 */
+    /* background-color: #ffe6e6; */
   }
 }

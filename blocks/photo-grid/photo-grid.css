@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-@media screen and (min-width: calc(1024px + 17px)) and (max-width: calc(1280px + 17px - 1px)) {
+@media screen and (min-width: calc(1024px)) and (max-width: calc(1280px - 1px)) {
   .photo-grid {
     width: calc(
       100% - 2 * (0px + ((100% - 1184px) / ((1184 - 1024) / (0 - 48))))
@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px - 1px)) {
+@media screen and (min-width: calc(768px)) and (max-width: calc(1024px - 1px)) {
   .photo-grid {
     gap: 14px;
     width: calc(928px + ((100% - 1024px) / ((1024 - 768) / (928 - 720))));
@@ -33,7 +33,7 @@
   }
 }
 
-@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px - 1px)) {
+@media screen and (min-width: calc(320px)) and (max-width: calc(768px - 1px)) {
   .photo-grid {
     gap: 16px 0;
     width: calc(720px + ((100% - 768px) / ((768 - 320) / (720 - 288))));

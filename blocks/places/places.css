@@ -7,7 +7,7 @@
   gap: 80px 0;
 }
 
-@media screen and (min-width: calc(1024px + 17px)) and (max-width: calc(1280px + 17px)) {
+@media screen and (min-width: calc(1024px)) and (max-width: calc(1280px - 1px)) {
   .places {
     width: calc(984px + ((100% - 1184px) / ((1184 - 1024) / (984 - 928))));
     /* временно */
@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px)) {
+@media screen and (min-width: calc(768px)) and (max-width: calc(1024px - 1px)) {
   .places {
     width: calc(928px + ((100% - 1024px) / ((1024 - 768) / (928 - 720))));
     gap: calc(80px + ((100% - 928px) / ((928 - 720) / (80 - 73)))) 0;
@@ -26,7 +26,7 @@
   }
 }
 
-@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px - 1px)) {
+@media screen and (min-width: calc(320px)) and (max-width: calc(768px - 1px)) {
   .places {
     width: calc(340px + ((100% - 768px) / ((768 - 320) / (340 - 320))));
     gap: 50px 0;

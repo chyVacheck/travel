@@ -7,33 +7,37 @@
   align-items: center;
   gap: 92px 0;
   /* временно */
-  background-color: #493737; /* цвет при 1280+ */
+  /* цвет при 1280+ */
+  /* background-color: #493737; */
 }
 
-@media screen and (min-width: calc(1024px + 17px)) and (max-width: calc(1280px + 17px)) {
+@media screen and (min-width: calc(1024px)) and (max-width: calc(1280px - 1px)) {
   .content {
     margin-top: calc(28px + ((100% - 1280px) / ((1280 - 1024) / (28 - 20))));
     /* временно */
-    background-color: #cccccc; /* цвет при 1024 - 1280 */
+    /* цвет при 1024 - 1280 */
+    /* background-color: #cccccc; */
   }
 }
 
-@media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px)) {
+@media screen and (min-width: calc(768px)) and (max-width: calc(1024px - 1px)) {
   .content {
     margin-top: 20px;
     margin-bottom: calc(92px + ((100% - 1024px) / ((1024 - 768) / (92 - 88))));
     gap: calc(92px + ((100% - 1024px) / ((1024 - 768) / (92 - 88))));;
     /* временно */
-    background-color: #f5a5a5; /* цвет при 768 - 1024 */
+    /* цвет при 768 - 1024 */
+    /* background-color: #f5a5a5; */
   }
 }
 
-@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px)) {
+@media screen and (min-width: calc(320px)) and (max-width: calc(768px - 1px)) {
   .content {
     margin-top: 20px;
     margin-bottom: calc(88px + ((100% - 768px) / ((768 - 320) / (88 - 64))));
     gap: calc(88px + ((100% - 768px) / ((768 - 320) / (88 - 64))));
     /* временно */
-    background-color: #ffe6e6; /* цвет при 320 - 768 */
+    /* цвет при 320 - 768 */
+    /* background-color: #ffe6e6; */
   }
 }

@@ -10,7 +10,7 @@
   list-style-type: none;
 }
 
-@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px)) {
+@media screen and (min-width: calc(320px - 1px)) and (max-width: calc(768px - 1px)) {
   .footer__links {
     flex-direction: column;
     font-size: 24px;

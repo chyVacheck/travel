@@ -5,14 +5,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 18px;
 
   /* временно */
   /* цвет при 1280+ */
   /* background-color: #493737; */
 }
 
-@media screen and (min-width: calc(1024px + 17px)) and (max-width: calc(1280px + 17px)) {
+@media screen and (min-width: calc(1024px)) and (max-width: calc(1280px - 1px)) {
   .footer {
     width: calc(1184px + ((100% - 1280px) / ((1280 - 1024) / (1184 - 928))));
     /* временно */
@@ -21,7 +20,7 @@
   }
 }
 
-@media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px)) {
+@media screen and (min-width: calc(768px)) and (max-width: calc(1024px - 1px)) {
   .footer {
     width: calc(928px + ((100% - 1024px) / ((1024 - 768) / (928 - 720))));
     /* временно */
@@ -30,10 +29,11 @@
   }
 }
 
-@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px)) {
+@media screen and (min-width: calc(320px)) and (max-width: calc(768px - 1px)) {
   .footer {
     width: calc(720px + ((100% - 768px) / ((768 - 320) / (720 - 288))));
     flex-direction: column;
+    gap: 48px;
     /* временно */
     /* цвет при 320 - 768 */
     /* background-color: #ffe6e6; */

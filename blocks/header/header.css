@@ -4,31 +4,35 @@
   margin: 28px 0;
   justify-content: space-between;
 
-    /* временно */
-    background-color: #493737; /* цвет при 1280+ */
+  /* временно */
+  /* цвет при 1280+ */
+  /* background-color: #493737; */
 }
 
-@media screen and (min-width: calc(1024px + 17px)) and (max-width: calc(1280px + 17px)) {
+@media screen and (min-width: calc(1024px)) and (max-width: calc(1280px - 1px)) {
   .header {
     width: calc(1184px + ((100% - 1280px) / ((1280 - 1024) / (1184 - 928))));
     /* временно */
-    background-color: #cccccc; /* цвет при 1024 - 1280 */
+    /* цвет при 1024 - 1280 */
+    /* background-color: #cccccc; */
   }
 }
 
-@media screen and (min-width: calc(768px + 17px)) and (max-width: calc(1024px + 17px)) {
+@media screen and (min-width: calc(768px)) and (max-width: calc(1024px - 1px)) {
   .header {
     width: calc(928px + ((100% - 1024px) / ((1024 - 768) / (928 - 720))));
     /* временно */
-    background-color: #f5a5a5; /* цвет при 768 - 1024 */
+    /* цвет при 768 - 1024 */
+    /* background-color: #f5a5a5; */
   }
 }
 
-@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px)) {
+@media screen and (min-width: calc(320px)) and (max-width: calc(768px - 1px)) {
   .header {
     margin: calc(28px + ((100% - 768px) / ((768 - 320) / (28 - 16)))) 0 28px 0;
     width: calc(720px + ((100% - 768px) / ((768 - 320) / (720 - 288))));
     /* временно */
-    background-color: #ffe6e6; /* цвет при 320 - 768 */
+    /* цвет при 320 - 768 */
+    /* background-color: #ffe6e6; */
   }
 }
