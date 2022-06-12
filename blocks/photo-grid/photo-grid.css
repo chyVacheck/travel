@@ -8,39 +8,29 @@
   justify-content: center;
 }
 
-@media screen and (min-width: calc(896px)) and (max-width: calc(1152px)) {
+@media screen and (min-width: 896px) and (max-width: 1152px) {
   .photo-grid {
-    width: calc(
-      100% - 2 * (0px + ((100% - 1184px) / ((1184 - 1024) / (0 - 48))))
-    );
+    width: 90.625%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    /* временно */
-    /* цвет при 1024 - 1280 */
-    /* background-color: #2e2323; */
+    gap: 14px;
   }
 }
 
-@media screen and (min-width: calc(544px)) and (max-width: calc(896px)) {
+@media screen and (min-width: 544px) and (max-width: 896px) {
   .photo-grid {
-    gap: 14px;
-    width: calc(928px + ((100% - 1024px) / ((1024 - 768) / (928 - 720))));
+    width: 93.75%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    /* временно */
-    /* цвет при 768 - 1024 */
-    /* background-color: #cc3535; */
+    gap: 16px;
   }
 }
 
-@media screen and (min-width: calc(320px)) and (max-width: calc(544px)) {
+@media screen and (min-width: 320px) and (max-width: 544px) {
   .photo-grid {
-    gap: 16px 0;
-    width: calc(720px + ((100% - 768px) / ((768 - 320) / (720 - 288))));
+    width: 90%;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    /* временно */
-    /* цвет при 320 - 768 */
-    /* background-color: #3b0404; */
+    gap: 12px 0;
   }
 }

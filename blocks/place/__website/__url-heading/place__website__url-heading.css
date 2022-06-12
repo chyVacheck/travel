@@ -10,19 +10,14 @@
   color: #aaaaaa;
 }
 
-@media screen and (min-width: calc(768px)) and (max-width: calc(1024px - 1px)) {
+@media screen and (min-width: 544px) and (max-width: 896px) {
   .place__website__url-heading {
     line-height: 100%;
-    /* временно */
-    /* цвет при 768 - 1024 */
-    /* background-color: #f5a5a5; */
   }
 }
 
-@media screen and (min-width: calc(320px)) and (max-width: calc(768px - 1px)) {
+@media screen and (min-width: 320px) and (max-width: 544px) {
   .place__website__url-heading {
     line-height: 100%;
-    /* временно */
-    /* цвет при 320 - 768 */
-    /* background-color: #ffe6e6; */
+  }
 }

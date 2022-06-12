@@ -7,11 +7,8 @@
   gap: 12px 0;
 }
 
-@media screen and (min-width: calc(320px + 17px)) and (max-width: calc(768px + 17px - 1px)) {
+@media screen and (min-width: 320px) and (max-width: 544px) {
   .place__website {
     width: 288px;
-    /* временно */
-    /* цвет при 320 - 768 */
-    /* background-color: #ffe6e6; */
   }
 }

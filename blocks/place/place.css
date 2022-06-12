@@ -6,39 +6,25 @@
   gap: 48px 40px;
 }
 
-@media screen and (min-width: calc(896px)) and (max-width: calc(1152px)) {
+@media screen and (min-width: 896px) and (max-width: 1152px) {
   .place {
-    grid-template-columns:
-      calc(460px + ((100% - 984px) / ((984 - 928) / (460 - 440))))
-      calc(484px + ((100% - 984px) / ((984 - 928) / (484 - 456))));
-    gap: 48px calc(40px + ((100% - 984px) / ((984 - 928) / (40 - 32))));
-    /* временно */
-    /* цвет при 1024 - 1280 */
-    /* background-color: #cccccc; */
+    grid-template-columns: 55fr 57fr; /* отношение 440px к 456px */
+    gap: 48px 32px;
   }
 }
 
-@media screen and (min-width: calc(544px)) and (max-width: calc(896px)) {
+@media screen and (min-width: 544px) and (max-width: 896px) {
   .place {
-    grid-template-columns:
-      calc(440px + ((100% - 928px) / ((928 - 720) / (440 - 340))))
-      calc(456px + ((100% - 928px) / ((928 - 720) / (456 - 352))));
-
-    gap: 48px calc(32px + ((100% - 928px) / ((928 - 720) / (32 - 28))));
-    /* временно */
-    /* цвет при 768 - 1024 */
-    /* background-color: #f5a5a5; */
+    grid-template-columns: 85fr 88fr; /* отношение 340px к 352px */
+    gap: 48px 28px;
   }
 }
 
-@media screen and (min-width: calc(320px)) and (max-width: calc(544px)) {
+@media screen and (min-width: 320px) and (max-width: 544px) {
   .place {
     width: 100%;
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 32px 0;
-    /* временно */
-    /* цвет при 320 - 768 */
-    /* background-color: #e96363; */
   }
 }
