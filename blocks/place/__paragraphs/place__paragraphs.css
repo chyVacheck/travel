@@ -1,13 +1,13 @@
 .place__paragraphs {
   margin: 0%;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 26px 0;
 }
 
-@media screen and (min-width: 544px) and (max-width: 896px) {
+/* 320 - 896 */
+@media screen and (min-width: 320px) and (max-width: 896px) {
   .place__paragraphs {
     gap: 25px 0;
   }
@@ -15,7 +15,6 @@
 
 @media screen and (min-width: 320px) and (max-width: 544px) {
   .place__paragraphs {
-    gap: 25px 0;
     align-items: center;
     max-width: 288px;
   }
