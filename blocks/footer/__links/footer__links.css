@@ -2,6 +2,7 @@
   margin: 0%;
   padding: 0;
   display: flex;
+  padding-right: 18px;
   flex-direction: row;
   gap: 18px;
   font-style: normal;
@@ -12,7 +13,7 @@
   list-style-type: none;
 }
 
-@media screen and (min-width: calc(320px)) and (max-width: calc(544px)) {
+@media screen and (min-width: 320px) and (max-width: 544px) {
   .footer__links {
     flex-direction: column;
     font-size: 24px;

@@ -7,19 +7,19 @@
   justify-content: space-between;
 }
 
-@media screen and (min-width: calc(896px)) and (max-width: calc(1152px)) {
+@media screen and (min-width: 896px) and (max-width: 1152px) {
   .footer {
     width: 90.625%;
   }
 }
 
-@media screen and (min-width: calc(544px)) and (max-width: calc(896px)) {
+@media screen and (min-width: 644px) and (max-width: 896px) {
   .footer {
     width: 93.75%;
   }
 }
 
-@media screen and (min-width: calc(320px)) and (max-width: calc(544px)) {
+@media screen and (min-width: 320px) and (max-width: 644px) {
   .footer {
     width: 90%;
     flex-direction: column;

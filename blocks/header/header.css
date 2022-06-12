@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (min-width: calc(320px)) and (max-width: calc(544px)) {
+@media screen and (min-width: 320px) and (max-width: 544px) {
   .header {
     width: 90%;
     margin-top: 16px;
