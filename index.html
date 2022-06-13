@@ -13,15 +13,17 @@
     <!-- шапка сайта, блок header -->
     <header class="header">
       <img class="header__logo" src="./images/header-logo.svg" alt="Россия" />
-      <div class="header__lang-links">
-        <a
-          class="header__lang-link header__lang-link_active link"
-          lang="en"
-          href="#"
-          >Ru</a
-        >
-        <a class="header__lang-link link" lang="en" href="#">En</a>
-      </div>
+      <ul class="header__lang-links">
+        <li>
+          <a
+            class="header__lang-link header__lang-link_active link"
+            lang="en"
+            href="#"
+            >Ru</a
+          >
+        </li>
+        <li><a class="header__lang-link link" lang="en" href="#">En</a></li>
+      </ul>
     </header>
     <!-- контент сайта, блок content -->
     <main class="content">
@@ -59,8 +61,14 @@
 
         <ul class="intro__list">
           <li>Часовых поясов <span class="intro__number">11</span></li>
-          <li>Объектов природного наследия ЮНЕСКО <span class="intro__number">12</span></li>
-          <li>Объектов культурного наследия ЮНЕСКО <span class="intro__number">16</span></li>
+          <li>
+            Объектов природного наследия ЮНЕСКО
+            <span class="intro__number">12</span>
+          </li>
+          <li>
+            Объектов культурного наследия ЮНЕСКО
+            <span class="intro__number">16</span>
+          </li>
           <li>Природных заповедников <span class="intro__number">105</span></li>
           <li>Аэропортов <span class="intro__number">241</span></li>
         </ul>
@@ -161,7 +169,9 @@
           <h2 class="place__title title">Куршская коса</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
-            <a class="place__link link" href="http://park-kosa.ru">park-kosa.ru</a>
+            <a class="place__link link" href="http://park-kosa.ru"
+              >park-kosa.ru</a
+            >
           </div>
           <img
             class="place__image"
@@ -324,12 +334,32 @@
     </main>
     <!-- Подвал, блок footer -->
     <footer class="footer">
-      <nav class="footer__links">
-          <a class="footer__link link" href="https://yandex.ru/maps">Карты</a>
-          <a class="footer__link link" href="https://yandex.ru/pogoda">Погода</a>
-          <a class="footer__link link" href="https://rasp.yandex.ru">Расписание</a>
-          <a class="footer__link link" href="https://calendar.yandex.ru">Календарь</a>
-          <a class="footer__link link" href="https://travel.yandex.ru">Путешествия</a>
+      <nav>
+        <ul class="footer__links">
+          <li>
+            <a class="footer__link link" href="https://yandex.ru/maps">Карты</a>
+          </li>
+          <li>
+            <a class="footer__link link" href="https://yandex.ru/pogoda"
+              >Погода</a
+            >
+          </li>
+          <li>
+            <a class="footer__link link" href="https://rasp.yandex.ru"
+              >Расписание</a
+            >
+          </li>
+          <li>
+            <a class="footer__link link" href="https://calendar.yandex.ru"
+              >Календарь</a
+            >
+          </li>
+          <li>
+            <a class="footer__link link" href="https://travel.yandex.ru"
+              >Путешествия</a
+            >
+          </li>
+        </ul>
       </nav>
       <p class="footer__copyright">© 2022. Дмитрий Шах</p>
     </footer>
