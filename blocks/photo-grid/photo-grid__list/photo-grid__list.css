@@ -5,8 +5,10 @@
   display: grid;
   list-style: none;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
   gap: 16px;
   justify-content: center;
+  line-height: 0;
 }
 
 @media screen and (min-width: 896px) and (max-width: 1152px) {
