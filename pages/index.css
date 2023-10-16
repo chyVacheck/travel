@@ -1,6 +1,6 @@
 @import url(./../vendor/normalize.css);
 
-@import url(./../blocks/page/page.css); /* подключчаем настройки страницы */
+@import url(./../blocks/page/page.css); /* подключаем настройки страницы */
 @import url(./../vendor/fonts/fonts.css); /* подключаем шрифты */
 
 /* подключаем все, что в шапке */
